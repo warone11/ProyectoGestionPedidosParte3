@@ -31,4 +31,10 @@ abstract class producto {
     
         return "Nombre: "+this.nombre+", Precio: "+this.precio;
     }
+    public boolean precioValido(){
+    if(precio>=0){
+        return true;
+    }
+    return false;
+}
 }

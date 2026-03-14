@@ -32,4 +32,17 @@ public class cliente {
     public String mostrarInformacion(){
         return "Nombre: "+getNombre()+" Correo: "+getCorreo()+" Telefono: "+getTelefono();
     }
+    public boolean correoValido() {
+    if(correo.contains("@") && correo.contains(".")){
+        return true;
+    }
+    return false;
+    }
+
+    public boolean telefonoValido() {
+        if(telefono.length()==9){
+            return true;
+        }
+        return false;
+    }
 }

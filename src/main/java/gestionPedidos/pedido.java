@@ -28,4 +28,14 @@ public class pedido {
         }
         System.out.println("********************************\nTotal: "+calcularTotal());
     }
+    public int numeroProductos(){
+    return productos.size();
+    }
+
+    public boolean pedidoVacio(){
+        if(productos.size()==0){
+            return true;
+        }
+        return false;
+    }
 }
