@@ -37,5 +37,26 @@ public class ProductoTest {
         productoFisico p = new productoFisico("Libro",-5.0,5.0);
         assertFalse(p.precioValido());
     }
+    @Test
+    public void testGettersAndSetters(){
+        productoFisico pf= new productoFisico("producto", 100.0, 5.0);
+        pf.setNombre("productoNew");
+        assertEquals(pf.getNombre(), "productoNew");
+        pf.setPrecio(90.0);
+        assertEquals(pf.getPrecio(), 90.0);
+        pf.setCosteEnvio(7.0);
+        assertEquals(pf.getCosteEnvio(), 7.0);
+        assertEquals(pf.calcularPrecioFinal(), 97.0,1.0);
+        productoDigital pd=new productoDigital("producto", 100.0, 50.0, "8343543543541");
+        pd.setNombre("productoNew");
+        assertEquals(pd.getNombre(), "productoNew");
+        pd.setPrecio(90.0);
+        assertEquals(pd.getPrecio(), 90.0);
+        pd.setTamanyoDescarga(7.0);
+        assertEquals(pd.getTamanyoDescarga(), 7.0);
+        pd.setLicencia("54635342432");
+        assertEquals(pd.getLicencia(), "54635342432");
+        assertEquals(pd.mostrarInformacion(), "Nombre: productoNew Precio: 90.0 Tamaño de descarga: 7.0 Licencia: 54635342432");
+    }
 
 }

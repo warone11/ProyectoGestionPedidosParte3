@@ -20,6 +20,7 @@ public class PedidoTest {
         p.agregarProducto(prod,2);
 
         assertEquals(2,p.numeroProductos());
+        p.mostrarPedido();
     }
 
     @Test
