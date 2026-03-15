@@ -1,3 +1,4 @@
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -6,36 +7,36 @@ import org.junit.jupiter.api.Test;
 import gestionPedidos.cliente;
 public class ClienteTest {
     @Test
-    public void testNombreCliente(){
+     void testNombreCliente(){
         cliente c = new cliente("Juan","juan@gmail.com","123456789");
         assertEquals("Juan", c.getNombre());
     }
 
     @Test
-    public void testCorreoValido(){
+     void testCorreoValido(){
         cliente c = new cliente("Ana","ana@gmail.com","123456789");
         assertTrue(c.correoValido());
     }
 
     @Test
-    public void testCorreoIncorrecto(){
+     void testCorreoIncorrecto(){
         cliente c = new cliente("Ana","anagmail","123456789");
         assertFalse(c.correoValido());
     }
 
     @Test
-    public void testTelefonoValido(){
+     void testTelefonoValido(){
         cliente c = new cliente("Ana","ana@gmail.com","123456789");
         assertTrue(c.telefonoValido());
     }
 
     @Test
-    public void testTelefonoIncorrecto(){
+     void testTelefonoIncorrecto(){
         cliente c = new cliente("Ana","ana@gmail.com","123");
         assertFalse(c.telefonoValido());
     }
     @Test
-    public void testGettersYSetters(){
+    void testGettersYSetters(){
         cliente c = new cliente("Javier","javi123@gmai.com", "987654321");
         c.setCorreo("javinuevo@gmail.com");
         assertEquals(c.getCorreo(), "javinuevo@gmail.com");
@@ -45,7 +46,7 @@ public class ClienteTest {
         assertEquals(c.getTelefono(), "999999999");
     }
     @Test
-    public void testMostrarInformacion(){
+     void testMostrarInformacion(){
         cliente c = new cliente("Javier","javi123@gmail.com", "987654321");
         assertEquals(c.mostrarInformacion(), "Nombre: Javier Correo: javi123@gmail.com Telefono: 987654321");
     }

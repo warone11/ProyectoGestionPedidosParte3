@@ -10,7 +10,7 @@ import gestionPedidos.productoFisico;
 public class PedidoTest {
 
     @Test
-    public void testAgregarProducto(){
+     void testAgregarProducto(){
 
         cliente c = new cliente("Luis","luis@gmail.com","123456789");
         pedido p = new pedido(c);
@@ -24,7 +24,7 @@ public class PedidoTest {
     }
 
     @Test
-    public void testPedidoVacio(){
+     void testPedidoVacio(){
 
         cliente c = new cliente("Luis","luis@gmail.com","123456789");
         pedido p = new pedido(c);
@@ -33,7 +33,7 @@ public class PedidoTest {
     }
 
     @Test
-    public void testCalcularTotal(){
+     void testCalcularTotal(){
 
         cliente c = new cliente("Luis","luis@gmail.com","123456789");
         pedido p = new pedido(c);

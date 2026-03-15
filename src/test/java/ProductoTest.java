@@ -9,36 +9,36 @@ import gestionPedidos.productoFisico;
 public class ProductoTest {
 
     @Test
-    public void testPrecioFinalDigital(){
+     void testPrecioFinalDigital(){
         productoDigital p = new productoDigital("Juego",20.0,5.0,"personal");
         assertEquals(20.0, p.calcularPrecioFinal());
     }
 
     @Test
-    public void testCalculoIva(){
+     void testCalculoIva(){
         productoDigital p = new productoDigital("Juego",100.0,5.0,"personal");
         assertEquals(21.0, p.calculoIva());
     }
 
     @Test
-    public void testPrecioFinalFisico(){
+     void testPrecioFinalFisico(){
         productoFisico p = new productoFisico("Libro",10.0,5.0);
         assertEquals(15.0, p.calcularPrecioFinal());
     }
 
     @Test
-    public void testPrecioValido(){
+     void testPrecioValido(){
         productoFisico p = new productoFisico("Libro",10.0,5.0);
         assertTrue(p.precioValido());
     }
 
     @Test
-    public void testPrecioNegativo(){
+     void testPrecioNegativo(){
         productoFisico p = new productoFisico("Libro",-5.0,5.0);
         assertFalse(p.precioValido());
     }
     @Test
-    public void testGettersAndSetters(){
+     void testGettersAndSetters(){
         productoFisico pf= new productoFisico("producto", 100.0, 5.0);
         pf.setNombre("productoNew");
         assertEquals(pf.getNombre(), "productoNew");
