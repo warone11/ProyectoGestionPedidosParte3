@@ -1,3 +1,3 @@
-ProductoTest.class
-ClienteTest.class
-PedidoTest.class
+gestionPedidos/PedidoTest.class
+gestionPedidos/ClienteTest.class
+gestionPedidos/ProductoTest.class
