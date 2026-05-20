@@ -2,5 +2,5 @@ projectKey=gestionDePedidos
 serverUrl=http://localhost:9000
 serverVersion=10.4.1.88267
 dashboardUrl=http://localhost:9000/dashboard?id=gestionDePedidos
-ceTaskId=d91c4bee-7158-4af1-8e6f-faec1e0b3feb
-ceTaskUrl=http://localhost:9000/api/ce/task?id=d91c4bee-7158-4af1-8e6f-faec1e0b3feb
+ceTaskId=e67024f3-cfab-4bd9-8f74-f8fa13ede564
+ceTaskUrl=http://localhost:9000/api/ce/task?id=e67024f3-cfab-4bd9-8f74-f8fa13ede564

@@ -16,6 +16,9 @@
 <maven.compiler.target>17</maven.compiler.target>
 <sonar.host.url>http://localhost:9000</sonar.host.url>
 <sonar.projectKey>gestionDePedidos</sonar.projectKey>
+<sonar.coverage.jacoco.xmlReportPaths>
+    ${project.basedir}/target/site/jacoco/jacoco.xml
+</sonar.coverage.jacoco.xmlReportPaths>
 </properties>
 
 <dependencies>
