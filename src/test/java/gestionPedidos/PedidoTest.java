@@ -1,11 +1,7 @@
+package gestionPedidos;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
-
-import gestionPedidos.cliente;
-import gestionPedidos.pedido;
-import gestionPedidos.productoDigital;
-import gestionPedidos.productoFisico;
 
 public class PedidoTest {
 
